@@ -9,13 +9,13 @@ Before Start DCS:
 
 Like a Mod, place the files in the Script Folder under Saved games/DcsOpenbeta
 
-[Imgur](https://i.imgur.com/LO2r1qd.png)
+[1](https://i.imgur.com/LO2r1qd.png)
 
-[Imgur](https://i.imgur.com/G6vMn35.png)
+[2](https://i.imgur.com/G6vMn35.png)
 
-[Imgur](https://i.imgur.com/RkcY13T.png)
+[3](https://i.imgur.com/RkcY13T.png)
 
-[Imgur](https://i.imgur.com/xybDZTh.png)
+[4](https://i.imgur.com/xybDZTh.png)
 
 
 
