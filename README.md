@@ -69,3 +69,8 @@ All units will be read from the File and spawned.
 First run since no file it's there nothing will happen.
 Every 1 minute the Save process will happen
 Fist run will also create the file in the folder savedgames\dcsopenbeta\MISSIONNAME.txt
+
+
+Any donation will be greatly appreciated!.
+
+paypal.me/MarcosTupperromero
