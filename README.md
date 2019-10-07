@@ -42,8 +42,11 @@ MISSION MUST HAVE THE NAME OF THE FILE AS XXXXXX_TPE.miz
 Add the file: persistentMissionFileLoad.lua in a new trigger with a doScriptFile action 
 
 This Trigger MUST be executed After the load of MIST, CTLD and CSAR scripts.
+
 [CTLD](https://github.com/BSD-DEV/DCS-CTLD)
+
 [CSAR](https://github.com/BSD-DEV/DCS-CSAR)
+
 
 Example: MIST - At mission Start
 
