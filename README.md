@@ -9,11 +9,15 @@ Before Start DCS:
 
 Like a Mod, place the files in the Script Folder under Saved games/DcsOpenbeta
 
-![alt text](https://i.ibb.co/gVKPcTS/1.png)
+[Imgur](https://i.imgur.com/LO2r1qd.png)
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/nR8fJM7/2.png" alt="2" border="0"></a>
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/BBrnGGs/3.png" alt="3" border="0"></a>
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/N9b012h/4.png" alt="4" border="0"></a>
+[Imgur](https://i.imgur.com/G6vMn35.png)
+
+[Imgur](https://i.imgur.com/RkcY13T.png)
+
+[Imgur](https://i.imgur.com/xybDZTh.png)
+
+
 
 Files to be added in Hooks and Net folder.
 
