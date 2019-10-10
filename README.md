@@ -78,4 +78,3 @@ Fist run will also create the file in the folder savedgames\dcsopenbeta\MISSIONN
 
 Any donation will be greatly appreciated!.
 
-[Donate Using Paypal](https://paypal.me/MarcosTupperromero)
