@@ -41,7 +41,7 @@ Your Mission file MUST be named  XXXXXX_TPE.miz  ie: Operationsaver_TPE.miz
 Using "Time more" triggers, load MIST, CTLD and CSAR scripts. Only then can you add: persistentMissionFileLoad.lua with a doScriptFile action.
 
 
-[MIST]   https://forums.eagle.ru/showthread.php?t=98616
+[MIST](https://forums.eagle.ru/showthread.php?t=98616)
 
 [CTLD](https://github.com/BSD-DEV/DCS-CTLD)
 
