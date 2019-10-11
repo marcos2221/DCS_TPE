@@ -1,5 +1,5 @@
 # DCS_TPE
-Tupper's Persistency engine: Save the progress on the mission, works in Single and Multiplayer
+Tupper's Persistency Engine (TPE): This group of scripts works together to save the progress of the mission, it works in Single and Multiplayer scenarios.
 
 
 [![Video1](http://img.youtube.com/vi/eD73WGEDZgI/0.jpg)](http://www.youtube.com/watch?v=eD73WGEDZgI "Save and Load Part 1")
@@ -11,37 +11,37 @@ Tupper's Persistency engine: Save the progress on the mission, works in Single a
 <b>Installation: </b>
 
 
-Before Start DCS:
+Before you start DCS:
+ You will need to place 2 files in the "Scripts" Directory which can be found in your Saved games/DcsOpenbeta folder.
+ To be more precise, you need to place TPE.lua in the ""Hooks" folder and mainPersistentEnginenet.lua in the "Net" folder.
 
-Like a Mod, place the files in the Script Folder under Saved games/DcsOpenbeta
+So Scripts\Hooks\TPE.lua & Scripts\net\TPE\mainPersistentEnginenet.lua
 
 ![1](https://i.imgur.com/LO2r1qd.png)
 
 ![2](https://i.imgur.com/G6vMn35.png)
 
-Files to be added in Hooks and Net folder.
 
-Scripts\Hooks\TPE.lua
-Script\net\TPE\mainPersistentEnginenet.lua
-Place JSON.lua in installation folder \\programfiles\eagleDynamics\dcsOpenbeta\ (one time, Will not be affected by Upgrades)
+ Now you can put JSON.lua in the installation folder \\programfiles\eagleDynamics\dcsOpenbeta\ (one time, Will not be affected by Upgrades)
 
 ![3](https://i.imgur.com/RkcY13T.png)
 
-Game must be run as administrator. At least after upgrades.
+After completing the above steps you need to run the game "as administrator". (right click on your game shortcut and chose "Run as administrator" )
 
-Fist time after Running A new folder will be created in savedgames\DcsOpenbeta\ named "tpe"
+After running your game for the first time you will notice that a new folder named "tpe" has been created in your savedgames\DcsOpenbeta\ directory
 
 ![4](https://i.imgur.com/xybDZTh.png)
 
-This folder will contain all the files for each mission the engine is used. and a Config file that is for Internal use.
+This folder will now hold the persistent text files necessary for the TP engine generator to build subsequent missions . It will also now contain a Config file that is for TPE's internal use.
 
-On Mission Editor:
+In the Mission Editor:
 
-MISSION MUST HAVE THE NAME OF THE FILE AS XXXXXX_TPE.miz
+Your Mission file MUST be named  XXXXXX_TPE.miz  ie: Operationsaver_TPE.miz
 
-Add the file: persistentMissionFileLoad.lua in a new trigger with a doScriptFile action 
+Using "Time more" triggers, load MIST, CTLD and CSAR scripts. Only then can you add: persistentMissionFileLoad.lua with a doScriptFile action.
 
-This Trigger MUST be executed After the load of MIST, CTLD and CSAR scripts.
+
+[MIST]   https://forums.eagle.ru/showthread.php?t=98616
 
 [CTLD](https://github.com/BSD-DEV/DCS-CTLD)
 
@@ -54,27 +54,24 @@ Example: MIST - At mission Start
 
              CSAR Times More 2 Seconds
 
-            PersistentMission...  Times more 3 seconds
+            persistentMissionFileLoad.lua  Times more 3 seconds
 
 -------------------------------------------------------------------------------------------------------
 
 Groups Names:
 
-Groups that will be persisted will have to be named as TP_XXXXXX 
+Groups that you want included in the persistent environment will have to have a "Group Name" prefixed with TP_ Such as TP_xxxxxx  ie TP_Tank
 
-On road waypoint: If the Unit Contains a waypoint that has to be followed on the road, names has to be set as TP_XXXXonroad  (It works but still a WIP)
+On road waypoints: If the Group's route includes a waypoint that is "onroad", The group name has to have "onroad" added after the groupname  eg:  TP_XXXXonroad  (It works, but it's still a WIP)
 
 -------------------------------------------------------------------------------------------------------
 
-Dynamic of the TPE:
+Dynamics of the TPE:
 
-Mission will start as usual,
-Initialization process
-All units will be read from the File and spawned.
-First run since no file it's there nothing will happen.
-Every 1 minute the Save process will happen
-Fist run will also create the file in the folder savedgames\dcsopenbeta\MISSIONNAME.txt
+The first time you run your mission it will start as per usual.
+About 1 minute into the mission the TPE Initialization process will create a new "tpe" directory in savedgames\dcsopenbeta\.
+The first run will also create a new text file in the savedgames\dcsopenbeta\tpe directory called ""yourmissionname_TPE.txt"
+These files are updated/saved every minute and they will be used when you select "fly again" in the "Debriefing Screen".
+Every 1 minute the TPE save process will notify you that your mission status is being saved.
 
-
-Any donation will be greatly appreciated!.
-
+On subsequent mission loads, the status of all correctly named groups will be read from the text file and spawned.
