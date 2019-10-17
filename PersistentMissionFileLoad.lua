@@ -365,7 +365,7 @@ function tpe.spawnGroups(jsoGroups)
            end
           end
         end
-        if _path[1] == nil and _group.waypoints[1] ~= nil then
+        if _path[1] == nil and _group.waypoints[2] ~= nil then
         --
            if string.match(_group.name, "onroad") then
             table.insert(_path, mist.ground.buildWP(point1, 'On Road', 10))
